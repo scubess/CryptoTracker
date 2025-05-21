@@ -19,7 +19,7 @@ final class APIService: CryptoService {
     }
     
     func fetchCryptoList() async throws -> [Crypto] {
-        let endpoint = Endpoint(fullPath: "/cryptos")
+        let endpoint = Endpoint(fullPath: "/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=50&sparkline=false")
         return try await client.get(endpoint)
     }
 }

@@ -21,11 +21,12 @@ final class CryptoListViewModel: ObservableObject {
 
     func load() async {
         isLoading = true
+        defer { isLoading = false }
+
         do {
             cryptos = try await fetchCryptoUseCase.execute()
         } catch {
             errorMessage = error.localizedDescription
         }
-        isLoading = false
     }
 }
