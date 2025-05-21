@@ -1,118 +1,44 @@
-# 🧪 iOS Clean Architecture Test – Developer Guide
+# ✅ CryptoTracker – Architecture Challenge Completion
 
-Hi there! 👋
+This repository demonstrates the completion of the architecture challenge using two different approaches in separate branches:
 
-This project demonstrates how to build a modular, testable iOS app using **MVVM + Clean Architecture**. Below is everything I followed (and recommend) to meet the exercise goals — from tools and architecture to testing and implementation practices.
+## 🔀 Branch Comparison
 
-## Issues Found 
+### 1. `main` branch (`CryptoTracker + MVVM MVI`)
 
-## Project Review Summary
+- Implemented using **SwiftUI** and **Combine**
+- Follows **MVVM-MVI** architecture for clear state management
+- Emphasizes reactive programming patterns
+- Suitable for modern Swift projects using declarative UI
 
-| Area               | Issue                                                                 |
-|--------------------|-----------------------------------------------------------------------|
-| **SOLID Principles**     | ✅ Mostly followed, but `Endpoint` is very loosely defined (S/I violations).   |
-| **Architecture**         | ❌ Clean Architecture not fully enforced (e.g., UseCase/Entity layers are thin or missing). |
-| **Async Handling**       | ❌ Using PromiseKit instead of modern Swift Concurrency (`async/await`) or Combine. |
-| **Presentation Layer**   | ❌ UIKit-based likely; lacks SwiftUI and Combine integration.      |
-| **Testing**              | ❌ No unit tests or mocks visible.                                 |
-| **Helpers/Utils**        | ✅ Minimal, but could use better centralization.                  |
-| **Modularization**       | ❌ Everything resides in a monolithic app module.                 |
+### 2. `mvvm_clean_architecture` branch (`CryptoTracker MVVM + Clean`)
 
-
-
----
-
-## 🛠 Tools & Libraries
-
-- **PromiseKit** – for async API handling.
-- **SPM / CocoaPods** – used for dependency management.
-- No use of **Combine** or **Singletons** to keep the code clean and test-friendly.
+- Built as a **UIKit + Storyboard** project
+- Refactored to follow **MVVM** with **Clean Architecture**
+- Achieved strong **modularity** and **SOLID principle** adherence
+- Emphasized layer separation (Presentation, Domain, Data)
+- Fully unit tested with some UI test coverage
 
 ---
 
-## 🧱 Architecture Overview
+## ✅ Achievements
 
-This app uses a layered, Clean Architecture setup:
+### ✅ SOLID Principles
 
-```
-Presentation (UIKit ViewController + Storyboard)
-↓
-ViewModel
-↓
-UseCase
-↓
-Repository
-↓
-Service
-↓
-Network (URLSession + PromiseKit)
-```
+- Classes follow Single Responsibility and Open/Closed principles
+- Interfaces defined for services to enable dependency inversion
 
-Everything is protocol-driven and injected manually, making the app easy to test and maintain.
+### ✅ Clean Architecture
 
----
+- Separated layers:
+  - `Presentation` (ViewControllers + ViewModels)
+  - `Domain` (UseCases + Entities)
+  - `Data` (Network + Repositories)
 
-## ✅ Testing Strategy
+### ✅ Modular Design
 
-### Unit Tests
-
-- Every class/module has **at least one unit test**
-- Focused heavily on testing:
-  - ViewModel logic
-  - UseCase forwarding
-  - Repository behavior
-  - Service calls with mocked clients
-
-### Test Coverage
-
-- Achieved **80%+** coverage across modules using `XCTest`
-
-### Bonus Tests
-
-- ✅ **Snapshot Tests** using `iOSSnapshotTestCase`
-- ✅ **UI Tests** using `XCTest` to verify interaction and navigation
-
----
-
-## 🧩 Implementation Notes
-
-### Presentation Layer
-
-- Implemented using **Storyboard** with:
-  - A **Search Bar**
-  - A **TableView** to display results
-- Auto Layout is applied to ensure responsiveness
-- Navigates to a **Detail ViewController** with a coin summary
-
-### ViewModel
-
-- Handles UI state + communication with UseCase
-- Implements protocol delegation back to the view
-- Fully tested with mock UseCase
-
-### UseCase
-
-- Acts as a pure pass-through layer
-- Converts data-layer models to domain models (if needed)
-- Contains no logic and is 100% test-covered
-
-### Repository
-
-- Talks to Service and returns transformed data
-- Written to be **fully mockable**
-
-### Service
-
-- Encapsulates networking logic and API endpoints
-- Injected with a shared `NetworkClient` (no hard-coded URLs inside services)
-
-### Network Layer
-
-- Built using `URLSession` + `PromiseKit`
-- Uses a generic decoder for all `Codable` responses
-- Logs errors cleanly (but strips in production)
-
----
+- Business logic and UI logic are clearly separated
+- Easy to swap components or scale features
 
 ## 🛡 Security, Config & Debugging
 
@@ -124,21 +50,24 @@ Everything is protocol-driven and injected manually, making the app easy to test
 - Optimized API response with **image caching** via `NSCache`
 - Zero force unwraps — everything is safely unwrapped with `guard` / `if let`
 
----
+### ✅ SwiftUI + Combine (in `main`)
 
-## 🧪 Snapshot & UI Testing Details
+- Implemented state-driven UI with SwiftUI views
+- Used Combine for reactive data binding
 
-### Snapshot Tests
+### ✅ UIKit + Storyboard (in `mvvm_clean_architecture`)
 
-- Use `FBSnapshotTestCase` to validate layout
-- Reference images stored under `CryptoTrackerTests/ReferenceImages_64/`
-- Run once in `recordMode = true` to capture images
+- Implemented UI programmatically using UIKit and Storyboard
+- Ideal for legacy and production UIKit apps
 
-### UI Tests
+### ✅ Tests
 
-- Basic tests include:
-  - Verifying crypto list loads
-  - Tapping on a coin cell navigates to detail
-- Tests use `XCUIApplication` and built-in assertions
+- Unit tests written for:
+  - ViewModels
+  - UseCases
+  - Services
+- UI tests for:
+  - Navigation flows
+  - View visibility/assertions
 
 ---
