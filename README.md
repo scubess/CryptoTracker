@@ -1,4 +1,4 @@
-[![iOS Tests](https://github.com/scubess/CryptoTracker/actions/workflows/ios.yml/badge.svg?branch=main)](https://github.com/scubess/CryptoTracker/actions/workflows/ios.yml)
+[![iOS starter workflow](https://github.com/scubess/CryptoTracker/actions/workflows/ios.yml/badge.svg)](https://github.com/scubess/CryptoTracker/actions/workflows/ios.yml)
 
 # ✅ CryptoTracker – Architecture Challenge Completion
 
