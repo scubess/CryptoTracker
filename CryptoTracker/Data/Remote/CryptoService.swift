@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CryptoService {
-    func fetchCryptoList() async throws -> [Crypto]
+    func fetchCryptoList(page: Int, limit: Int) async throws -> [Crypto]
 }
 
 final class APIService: CryptoService {
@@ -18,8 +18,22 @@ final class APIService: CryptoService {
         self.client = client
     }
     
-    func fetchCryptoList() async throws -> [Crypto] {
-        let endpoint = Endpoint(fullPath: "/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=50&sparkline=false")
+    /// /// further improvement:
+    /// - Validate input: Ensure `page` and `limit` are greater than zero.
+    /// - Extract magic strings (e.g., "usd", "market_cap_desc") into constants or enums.
+    /// - Add retry logic for transient errors (e.g. network drops).
+    /// - Optionally add logging or monitoring for failures.
+    func fetchCryptoList(page: Int, limit: Int) async throws -> [Crypto] {
+        let endpoint = Endpoint(
+            path: "/coins/markets",
+            queryItems: [
+                URLQueryItem(name: "vs_currency", value: "usd"),
+                URLQueryItem(name: "order", value: "market_cap_desc"),
+                URLQueryItem(name: "per_page", value: "\(limit)"),
+                URLQueryItem(name: "page", value: "\(page)"),
+                URLQueryItem(name: "sparkline", value: "false")
+            ]
+        )
         return try await client.get(endpoint)
     }
 }

@@ -8,19 +8,5 @@
 import Foundation
 
 protocol CryptoRepository {
-    func fetchCryptoList() async throws -> [Crypto]
+    func fetchCryptos(page: Int, limit: Int) async throws -> [Crypto]
 }
-
-final class CryptoRepositoryImpl: CryptoRepository {
-    private let service: CryptoService
-
-    init(service: CryptoService) {
-        self.service = service
-    }
-
-    func fetchCryptoList() async throws -> [Crypto] {
-        try await service.fetchCryptoList()
-    }
-}
-
-

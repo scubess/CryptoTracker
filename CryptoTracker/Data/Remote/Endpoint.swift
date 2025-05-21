@@ -8,8 +8,15 @@
 import Foundation
 
 struct Endpoint {
-    let fullPath: String
+    let path: String
+    var queryItems: [URLQueryItem] = []
+
     var url: URL {
-        return URL(string: "https://api.coingecko.com/api/v3\(fullPath)")!
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "api.coingecko.com"
+        components.path = "/api/v3\(path)"
+        components.queryItems = queryItems
+        return components.url!
     }
 }
