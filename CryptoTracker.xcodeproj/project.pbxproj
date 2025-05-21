@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000DB9902DCFC363009DFF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB98F2DCFC363009DFF03 /* AppDelegate.swift */; };
+		000DB9922DCFC363009DFF03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9912DCFC363009DFF03 /* SceneDelegate.swift */; };
+		000DB9972DCFC363009DFF03 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 000DB9962DCFC363009DFF03 /* Base */; };
+		000DB9992DCFC365009DFF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000DB9982DCFC365009DFF03 /* Assets.xcassets */; };
+		000DB99C2DCFC366009DFF03 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 000DB99B2DCFC366009DFF03 /* Base */; };
+		000DB9C12DCFC61F009DFF03 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 000DB9C02DCFC61F009DFF03 /* PromiseKit */; };
+		000DB9C42DCFC63B009DFF03 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9C32DCFC63B009DFF03 /* APIClient.swift */; };
+		000DB9C62DCFC64E009DFF03 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9C52DCFC64E009DFF03 /* Endpoint.swift */; };
+		000DB9C92DCFC66F009DFF03 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9C82DCFC66F009DFF03 /* CryptoService.swift */; };
+		000DB9CB2DCFC67D009DFF03 /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9CA2DCFC67D009DFF03 /* CryptoRepository.swift */; };
+		000DB9D02DCFC7DE009DFF03 /* FetchCryptoListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9CF2DCFC7DE009DFF03 /* FetchCryptoListUseCase.swift */; };
+		000DB9D32DCFC7FF009DFF03 /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9D22DCFC7FF009DFF03 /* CryptoListViewModel.swift */; };
+		000DB9D62DCFC824009DFF03 /* CryptoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9D52DCFC824009DFF03 /* CryptoListViewController.swift */; };
+		000DB9D92DCFC838009DFF03 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9D82DCFC838009DFF03 /* Crypto.swift */; };
+		000DB9DB2DCFD247009DFF03 /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9DA2DCFD247009DFF03 /* CryptoCell.swift */; };
+		000DB9DD2DCFD2A3009DFF03 /* CryptoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9DC2DCFD2A3009DFF03 /* CryptoDetailViewController.swift */; };
+		000DB9DF2DCFD2D1009DFF03 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9DE2DCFD2D1009DFF03 /* Utils.swift */; };
+		000DB9E12DCFD54E009DFF03 /* CryptoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9E02DCFD54E009DFF03 /* CryptoListViewModelTests.swift */; };
+		000DB9E32DCFD5E4009DFF03 /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9E22DCFD5E4009DFF03 /* MockNetworkClient.swift */; };
+		000DB9E52DCFD5F3009DFF03 /* CryptoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9E42DCFD5F3009DFF03 /* CryptoServiceTests.swift */; };
+		000DB9E72DCFD602009DFF03 /* MockCryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9E62DCFD602009DFF03 /* MockCryptoService.swift */; };
+		000DB9E92DCFD639009DFF03 /* CryptoRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9E82DCFD639009DFF03 /* CryptoRepositoryTests.swift */; };
+		000DB9EB2DCFD655009DFF03 /* FetchCryptoListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9EA2DCFD655009DFF03 /* FetchCryptoListUseCase.swift */; };
+		000DB9EE2DCFD736009DFF03 /* MockFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9ED2DCFD736009DFF03 /* MockFetchUseCase.swift */; };
+		000DB9F02DCFD764009DFF03 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9EF2DCFD764009DFF03 /* ViewModelDelegate.swift */; };
+		000DB9F22DCFD789009DFF03 /* MockCryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9F12DCFD789009DFF03 /* MockCryptoRepository.swift */; };
+		000DB9F52DCFD883009DFF03 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 000DB9F42DCFD883009DFF03 /* iOSSnapshotTestCase */; };
+		000DB9FC2DCFDAC5009DFF03 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9D82DCFC838009DFF03 /* Crypto.swift */; };
+		000DB9FD2DCFDAC9009DFF03 /* CryptoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9DC2DCFD2A3009DFF03 /* CryptoDetailViewController.swift */; };
+		000DB9FE2DCFDACB009DFF03 /* CryptoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9D52DCFC824009DFF03 /* CryptoListViewController.swift */; };
+		000DB9FF2DCFDB3D009DFF03 /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9D22DCFC7FF009DFF03 /* CryptoListViewModel.swift */; };
+		000DBA002DCFDB4D009DFF03 /* FetchCryptoListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9CF2DCFC7DE009DFF03 /* FetchCryptoListUseCase.swift */; };
+		000DBA012DCFDB57009DFF03 /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9CA2DCFC67D009DFF03 /* CryptoRepository.swift */; };
+		000DBA022DCFDB5E009DFF03 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9C82DCFC66F009DFF03 /* CryptoService.swift */; };
+		000DBA032DCFDB66009DFF03 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9C32DCFC63B009DFF03 /* APIClient.swift */; };
+		000DBA042DCFDB73009DFF03 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9C52DCFC64E009DFF03 /* Endpoint.swift */; };
+		000DBA052DCFDB80009DFF03 /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9DA2DCFD247009DFF03 /* CryptoCell.swift */; };
+		000DBA082DCFDBF9009DFF03 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 000DBA072DCFDBF9009DFF03 /* PromiseKit */; };
+		000DBA0A2DCFDC07009DFF03 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 000DBA092DCFDC07009DFF03 /* PromiseKit */; };
+		000DBA0B2DCFDC30009DFF03 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9DE2DCFD2D1009DFF03 /* Utils.swift */; };
+		000DBA0C2DCFDC7B009DFF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000DB9952DCFC363009DFF03 /* Main.storyboard */; };
+		000DBA0D2DCFDC7C009DFF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000DB9952DCFC363009DFF03 /* Main.storyboard */; };
+		000DBA0F2DCFDE66009DFF03 /* CryptoTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DBA0E2DCFDE66009DFF03 /* CryptoTrackerUITests.swift */; };
+		000DBA132DCFDFB8009DFF03 /* CryptoDetailSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DBA102DCFDF53009DFF03 /* CryptoDetailSnapshotTests.swift */; };
+		000DBA152DCFDFF0009DFF03 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 000DBA142DCFDFF0009DFF03 /* iOSSnapshotTestCase */; };
+		000DBA1E2DCFE3CE009DFF03 /* testCryptoDetailView_looksCorrect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000DBA1B2DCFE3CE009DFF03 /* testCryptoDetailView_looksCorrect@3x.png */; };
+		00B5DC892DD126A300763B8D /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 00B5DC882DD126A300763B8D /* Debug.xcconfig */; };
+		00B5DC8B2DD126B800763B8D /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 00B5DC8A2DD126B600763B8D /* Release.xcconfig */; };
+		00B5DC8D2DD127A100763B8D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5DC8C2DD127A100763B8D /* Environment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000DB9A32DCFC366009DFF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000DB9842DCFC363009DFF03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000DB98B2DCFC363009DFF03;
+			remoteInfo = CryptoTracker;
+		};
+		000DB9AD2DCFC366009DFF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000DB9842DCFC363009DFF03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000DB98B2DCFC363009DFF03;
+			remoteInfo = CryptoTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000DB98C2DCFC363009DFF03 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000DB98F2DCFC363009DFF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		000DB9912DCFC363009DFF03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		000DB9962DCFC363009DFF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		000DB9982DCFC365009DFF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000DB99B2DCFC366009DFF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		000DB99D2DCFC366009DFF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000DB9A22DCFC366009DFF03 /* CryptoTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		000DB9AC2DCFC366009DFF03 /* CryptoTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		000DB9C32DCFC63B009DFF03 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		000DB9C52DCFC64E009DFF03 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		000DB9C82DCFC66F009DFF03 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
+		000DB9CA2DCFC67D009DFF03 /* CryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepository.swift; sourceTree = "<group>"; };
+		000DB9CF2DCFC7DE009DFF03 /* FetchCryptoListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCryptoListUseCase.swift; sourceTree = "<group>"; };
+		000DB9D22DCFC7FF009DFF03 /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
+		000DB9D52DCFC824009DFF03 /* CryptoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewController.swift; sourceTree = "<group>"; };
+		000DB9D82DCFC838009DFF03 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		000DB9DA2DCFD247009DFF03 /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
+		000DB9DC2DCFD2A3009DFF03 /* CryptoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailViewController.swift; sourceTree = "<group>"; };
+		000DB9DE2DCFD2D1009DFF03 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		000DB9E02DCFD54E009DFF03 /* CryptoListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModelTests.swift; sourceTree = "<group>"; };
+		000DB9E22DCFD5E4009DFF03 /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
+		000DB9E42DCFD5F3009DFF03 /* CryptoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoServiceTests.swift; sourceTree = "<group>"; };
+		000DB9E62DCFD602009DFF03 /* MockCryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCryptoService.swift; sourceTree = "<group>"; };
+		000DB9E82DCFD639009DFF03 /* CryptoRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepositoryTests.swift; sourceTree = "<group>"; };
+		000DB9EA2DCFD655009DFF03 /* FetchCryptoListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCryptoListUseCase.swift; sourceTree = "<group>"; };
+		000DB9ED2DCFD736009DFF03 /* MockFetchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchUseCase.swift; sourceTree = "<group>"; };
+		000DB9EF2DCFD764009DFF03 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
+		000DB9F12DCFD789009DFF03 /* MockCryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCryptoRepository.swift; sourceTree = "<group>"; };
+		000DBA0E2DCFDE66009DFF03 /* CryptoTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerUITests.swift; sourceTree = "<group>"; };
+		000DBA102DCFDF53009DFF03 /* CryptoDetailSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoDetailSnapshotTests.swift; sourceTree = "<group>"; };
+		000DBA1B2DCFE3CE009DFF03 /* testCryptoDetailView_looksCorrect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testCryptoDetailView_looksCorrect@3x.png"; sourceTree = "<group>"; };
+		00B5DC882DD126A300763B8D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		00B5DC8A2DD126B600763B8D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		00B5DC8C2DD127A100763B8D /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000DB9892DCFC363009DFF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000DB9C12DCFC61F009DFF03 /* PromiseKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000DB99F2DCFC366009DFF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000DBA152DCFDFF0009DFF03 /* iOSSnapshotTestCase in Frameworks */,
+				000DBA0A2DCFDC07009DFF03 /* PromiseKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000DB9A92DCFC366009DFF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000DB9F52DCFD883009DFF03 /* iOSSnapshotTestCase in Frameworks */,
+				000DBA082DCFDBF9009DFF03 /* PromiseKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000DB9832DCFC363009DFF03 = {
+			isa = PBXGroup;
+			children = (
+				000DB98E2DCFC363009DFF03 /* CryptoTracker */,
+				000DB9A52DCFC366009DFF03 /* CryptoTrackerTests */,
+				000DB9AF2DCFC366009DFF03 /* CryptoTrackerUITests */,
+				000DB98D2DCFC363009DFF03 /* Products */,
+				000DBA062DCFDBF9009DFF03 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		000DB98D2DCFC363009DFF03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000DB98C2DCFC363009DFF03 /* CryptoTracker.app */,
+				000DB9A22DCFC366009DFF03 /* CryptoTrackerTests.xctest */,
+				000DB9AC2DCFC366009DFF03 /* CryptoTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000DB98E2DCFC363009DFF03 /* CryptoTracker */ = {
+			isa = PBXGroup;
+			children = (
+				000DB9D72DCFC831009DFF03 /* Models */,
+				000DB9D42DCFC817009DFF03 /* Presentation */,
+				000DB9D12DCFC7EF009DFF03 /* ViewModel */,
+				000DB9CE2DCFC7D8009DFF03 /* UseCase */,
+				000DB9CC2DCFC7B8009DFF03 /* Repository */,
+				000DB9C72DCFC662009DFF03 /* Service */,
+				000DB9C22DCFC62D009DFF03 /* Network */,
+				000DB98F2DCFC363009DFF03 /* AppDelegate.swift */,
+				00B5DC8C2DD127A100763B8D /* Environment.swift */,
+				000DB9912DCFC363009DFF03 /* SceneDelegate.swift */,
+				000DB9952DCFC363009DFF03 /* Main.storyboard */,
+				000DB9982DCFC365009DFF03 /* Assets.xcassets */,
+				000DB99A2DCFC366009DFF03 /* LaunchScreen.storyboard */,
+				000DB99D2DCFC366009DFF03 /* Info.plist */,
+				000DB9DE2DCFD2D1009DFF03 /* Utils.swift */,
+				00B5DC882DD126A300763B8D /* Debug.xcconfig */,
+				00B5DC8A2DD126B600763B8D /* Release.xcconfig */,
+			);
+			path = CryptoTracker;
+			sourceTree = "<group>";
+		};
+		000DB9A52DCFC366009DFF03 /* CryptoTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				000DBA1D2DCFE3CE009DFF03 /* ReferenceImages_64 */,
+				000DBA112DCFDF53009DFF03 /* SnapshotTests */,
+				000DB9EC2DCFD716009DFF03 /* MockService */,
+				000DB9E02DCFD54E009DFF03 /* CryptoListViewModelTests.swift */,
+				000DB9E42DCFD5F3009DFF03 /* CryptoServiceTests.swift */,
+				000DB9E82DCFD639009DFF03 /* CryptoRepositoryTests.swift */,
+				000DB9EA2DCFD655009DFF03 /* FetchCryptoListUseCase.swift */,
+			);
+			path = CryptoTrackerTests;
+			sourceTree = "<group>";
+		};
+		000DB9AF2DCFC366009DFF03 /* CryptoTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				000DBA0E2DCFDE66009DFF03 /* CryptoTrackerUITests.swift */,
+			);
+			path = CryptoTrackerUITests;
+			sourceTree = "<group>";
+		};
+		000DB9C22DCFC62D009DFF03 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				000DB9C32DCFC63B009DFF03 /* APIClient.swift */,
+				000DB9C52DCFC64E009DFF03 /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		000DB9C72DCFC662009DFF03 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				000DB9C82DCFC66F009DFF03 /* CryptoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		000DB9CC2DCFC7B8009DFF03 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				000DB9CA2DCFC67D009DFF03 /* CryptoRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		000DB9CE2DCFC7D8009DFF03 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				000DB9CF2DCFC7DE009DFF03 /* FetchCryptoListUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		000DB9D12DCFC7EF009DFF03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				000DB9D22DCFC7FF009DFF03 /* CryptoListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		000DB9D42DCFC817009DFF03 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				000DB9D52DCFC824009DFF03 /* CryptoListViewController.swift */,
+				000DB9DA2DCFD247009DFF03 /* CryptoCell.swift */,
+				000DB9DC2DCFD2A3009DFF03 /* CryptoDetailViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		000DB9D72DCFC831009DFF03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000DB9D82DCFC838009DFF03 /* Crypto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		000DB9EC2DCFD716009DFF03 /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				000DB9F12DCFD789009DFF03 /* MockCryptoRepository.swift */,
+				000DB9E22DCFD5E4009DFF03 /* MockNetworkClient.swift */,
+				000DB9E62DCFD602009DFF03 /* MockCryptoService.swift */,
+				000DB9ED2DCFD736009DFF03 /* MockFetchUseCase.swift */,
+				000DB9EF2DCFD764009DFF03 /* ViewModelDelegate.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
+		000DBA062DCFDBF9009DFF03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000DBA112DCFDF53009DFF03 /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				000DBA102DCFDF53009DFF03 /* CryptoDetailSnapshotTests.swift */,
+			);
+			path = SnapshotTests;
+			sourceTree = "<group>";
+		};
+		000DBA1C2DCFE3CE009DFF03 /* CryptoTrackerTests.CryptoDetailSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				000DBA1B2DCFE3CE009DFF03 /* testCryptoDetailView_looksCorrect@3x.png */,
+			);
+			path = CryptoTrackerTests.CryptoDetailSnapshotTests;
+			sourceTree = "<group>";
+		};
+		000DBA1D2DCFE3CE009DFF03 /* ReferenceImages_64 */ = {
+			isa = PBXGroup;
+			children = (
+				000DBA1C2DCFE3CE009DFF03 /* CryptoTrackerTests.CryptoDetailSnapshotTests */,
+			);
+			path = ReferenceImages_64;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000DB98B2DCFC363009DFF03 /* CryptoTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000DB9B62DCFC366009DFF03 /* Build configuration list for PBXNativeTarget "CryptoTracker" */;
+			buildPhases = (
+				000DB9882DCFC363009DFF03 /* Sources */,
+				000DB9892DCFC363009DFF03 /* Frameworks */,
+				000DB98A2DCFC363009DFF03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoTracker;
+			packageProductDependencies = (
+				000DB9C02DCFC61F009DFF03 /* PromiseKit */,
+			);
+			productName = CryptoTracker;
+			productReference = 000DB98C2DCFC363009DFF03 /* CryptoTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000DB9A12DCFC366009DFF03 /* CryptoTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000DB9B92DCFC366009DFF03 /* Build configuration list for PBXNativeTarget "CryptoTrackerTests" */;
+			buildPhases = (
+				000DB99E2DCFC366009DFF03 /* Sources */,
+				000DB99F2DCFC366009DFF03 /* Frameworks */,
+				000DB9A02DCFC366009DFF03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000DB9A42DCFC366009DFF03 /* PBXTargetDependency */,
+			);
+			name = CryptoTrackerTests;
+			packageProductDependencies = (
+				000DBA092DCFDC07009DFF03 /* PromiseKit */,
+				000DBA142DCFDFF0009DFF03 /* iOSSnapshotTestCase */,
+			);
+			productName = CryptoTrackerTests;
+			productReference = 000DB9A22DCFC366009DFF03 /* CryptoTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		000DB9AB2DCFC366009DFF03 /* CryptoTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000DB9BC2DCFC366009DFF03 /* Build configuration list for PBXNativeTarget "CryptoTrackerUITests" */;
+			buildPhases = (
+				000DB9A82DCFC366009DFF03 /* Sources */,
+				000DB9A92DCFC366009DFF03 /* Frameworks */,
+				000DB9AA2DCFC366009DFF03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000DB9AE2DCFC366009DFF03 /* PBXTargetDependency */,
+			);
+			name = CryptoTrackerUITests;
+			packageProductDependencies = (
+				000DB9F42DCFD883009DFF03 /* iOSSnapshotTestCase */,
+				000DBA072DCFDBF9009DFF03 /* PromiseKit */,
+			);
+			productName = CryptoTrackerUITests;
+			productReference = 000DB9AC2DCFC366009DFF03 /* CryptoTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000DB9842DCFC363009DFF03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					000DB98B2DCFC363009DFF03 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					000DB9A12DCFC366009DFF03 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 000DB98B2DCFC363009DFF03;
+					};
+					000DB9AB2DCFC366009DFF03 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 000DB98B2DCFC363009DFF03;
+					};
+				};
+			};
+			buildConfigurationList = 000DB9872DCFC363009DFF03 /* Build configuration list for PBXProject "CryptoTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000DB9832DCFC363009DFF03;
+			packageReferences = (
+				000DB9BF2DCFC61F009DFF03 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				000DB9F32DCFD846009DFF03 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
+			);
+			productRefGroup = 000DB98D2DCFC363009DFF03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000DB98B2DCFC363009DFF03 /* CryptoTracker */,
+				000DB9A12DCFC366009DFF03 /* CryptoTrackerTests */,
+				000DB9AB2DCFC366009DFF03 /* CryptoTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000DB98A2DCFC363009DFF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000DB9992DCFC365009DFF03 /* Assets.xcassets in Resources */,
+				000DB99C2DCFC366009DFF03 /* Base in Resources */,
+				00B5DC8B2DD126B800763B8D /* Release.xcconfig in Resources */,
+				000DB9972DCFC363009DFF03 /* Base in Resources */,
+				00B5DC892DD126A300763B8D /* Debug.xcconfig in Resources */,
+				000DBA0C2DCFDC7B009DFF03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000DB9A02DCFC366009DFF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000DBA1E2DCFE3CE009DFF03 /* testCryptoDetailView_looksCorrect@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000DB9AA2DCFC366009DFF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000DBA0D2DCFDC7C009DFF03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000DB9882DCFC363009DFF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000DB9DD2DCFD2A3009DFF03 /* CryptoDetailViewController.swift in Sources */,
+				000DB9D62DCFC824009DFF03 /* CryptoListViewController.swift in Sources */,
+				000DB9CB2DCFC67D009DFF03 /* CryptoRepository.swift in Sources */,
+				00B5DC8D2DD127A100763B8D /* Environment.swift in Sources */,
+				000DB9902DCFC363009DFF03 /* AppDelegate.swift in Sources */,
+				000DB9922DCFC363009DFF03 /* SceneDelegate.swift in Sources */,
+				000DB9DF2DCFD2D1009DFF03 /* Utils.swift in Sources */,
+				000DB9D32DCFC7FF009DFF03 /* CryptoListViewModel.swift in Sources */,
+				000DB9C42DCFC63B009DFF03 /* APIClient.swift in Sources */,
+				000DB9DB2DCFD247009DFF03 /* CryptoCell.swift in Sources */,
+				000DB9C92DCFC66F009DFF03 /* CryptoService.swift in Sources */,
+				000DB9D92DCFC838009DFF03 /* Crypto.swift in Sources */,
+				000DB9C62DCFC64E009DFF03 /* Endpoint.swift in Sources */,
+				000DB9D02DCFC7DE009DFF03 /* FetchCryptoListUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000DB99E2DCFC366009DFF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000DB9E92DCFD639009DFF03 /* CryptoRepositoryTests.swift in Sources */,
+				000DBA132DCFDFB8009DFF03 /* CryptoDetailSnapshotTests.swift in Sources */,
+				000DB9F02DCFD764009DFF03 /* ViewModelDelegate.swift in Sources */,
+				000DB9F22DCFD789009DFF03 /* MockCryptoRepository.swift in Sources */,
+				000DB9EE2DCFD736009DFF03 /* MockFetchUseCase.swift in Sources */,
+				000DB9E72DCFD602009DFF03 /* MockCryptoService.swift in Sources */,
+				000DB9E52DCFD5F3009DFF03 /* CryptoServiceTests.swift in Sources */,
+				000DB9EB2DCFD655009DFF03 /* FetchCryptoListUseCase.swift in Sources */,
+				000DB9E32DCFD5E4009DFF03 /* MockNetworkClient.swift in Sources */,
+				000DB9E12DCFD54E009DFF03 /* CryptoListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000DB9A82DCFC366009DFF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000DB9FD2DCFDAC9009DFF03 /* CryptoDetailViewController.swift in Sources */,
+				000DB9FF2DCFDB3D009DFF03 /* CryptoListViewModel.swift in Sources */,
+				000DBA012DCFDB57009DFF03 /* CryptoRepository.swift in Sources */,
+				000DBA0F2DCFDE66009DFF03 /* CryptoTrackerUITests.swift in Sources */,
+				000DBA032DCFDB66009DFF03 /* APIClient.swift in Sources */,
+				000DB9FE2DCFDACB009DFF03 /* CryptoListViewController.swift in Sources */,
+				000DBA0B2DCFDC30009DFF03 /* Utils.swift in Sources */,
+				000DBA002DCFDB4D009DFF03 /* FetchCryptoListUseCase.swift in Sources */,
+				000DB9FC2DCFDAC5009DFF03 /* Crypto.swift in Sources */,
+				000DBA052DCFDB80009DFF03 /* CryptoCell.swift in Sources */,
+				000DBA022DCFDB5E009DFF03 /* CryptoService.swift in Sources */,
+				000DBA042DCFDB73009DFF03 /* Endpoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000DB9A42DCFC366009DFF03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000DB98B2DCFC363009DFF03 /* CryptoTracker */;
+			targetProxy = 000DB9A32DCFC366009DFF03 /* PBXContainerItemProxy */;
+		};
+		000DB9AE2DCFC366009DFF03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000DB98B2DCFC363009DFF03 /* CryptoTracker */;
+			targetProxy = 000DB9AD2DCFC366009DFF03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		000DB9952DCFC363009DFF03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000DB9962DCFC363009DFF03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		000DB99A2DCFC366009DFF03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000DB99B2DCFC366009DFF03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		000DB9B42DCFC366009DFF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B5DC882DD126A300763B8D /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000DB9B52DCFC366009DFF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B5DC8A2DD126B600763B8D /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000DB9B72DCFC366009DFF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B5DC882DD126A300763B8D /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N5EX22VUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoTracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scube.com.CryptoTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000DB9B82DCFC366009DFF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B5DC8A2DD126B600763B8D /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N5EX22VUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoTracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scube.com.CryptoTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		000DB9BA2DCFC366009DFF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N5EX22VUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scube.com.CryptoTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoTracker";
+			};
+			name = Debug;
+		};
+		000DB9BB2DCFC366009DFF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N5EX22VUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scube.com.CryptoTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoTracker";
+			};
+			name = Release;
+		};
+		000DB9BD2DCFC366009DFF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N5EX22VUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scube.com.CryptoTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoTracker;
+			};
+			name = Debug;
+		};
+		000DB9BE2DCFC366009DFF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N5EX22VUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scube.com.CryptoTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000DB9872DCFC363009DFF03 /* Build configuration list for PBXProject "CryptoTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000DB9B42DCFC366009DFF03 /* Debug */,
+				000DB9B52DCFC366009DFF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000DB9B62DCFC366009DFF03 /* Build configuration list for PBXNativeTarget "CryptoTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000DB9B72DCFC366009DFF03 /* Debug */,
+				000DB9B82DCFC366009DFF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000DB9B92DCFC366009DFF03 /* Build configuration list for PBXNativeTarget "CryptoTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000DB9BA2DCFC366009DFF03 /* Debug */,
+				000DB9BB2DCFC366009DFF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000DB9BC2DCFC366009DFF03 /* Build configuration list for PBXNativeTarget "CryptoTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000DB9BD2DCFC366009DFF03 /* Debug */,
+				000DB9BE2DCFC366009DFF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		000DB9BF2DCFC61F009DFF03 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+		000DB9F32DCFD846009DFF03 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/ios-snapshot-test-case.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		000DB9C02DCFC61F009DFF03 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000DB9BF2DCFC61F009DFF03 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		000DB9F42DCFD883009DFF03 /* iOSSnapshotTestCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000DB9F32DCFD846009DFF03 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
+			productName = iOSSnapshotTestCase;
+		};
+		000DBA072DCFDBF9009DFF03 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000DB9BF2DCFC61F009DFF03 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		000DBA092DCFDC07009DFF03 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000DB9BF2DCFC61F009DFF03 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		000DBA142DCFDFF0009DFF03 /* iOSSnapshotTestCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000DB9F32DCFD846009DFF03 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
+			productName = iOSSnapshotTestCase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 000DB9842DCFC363009DFF03 /* Project object */;
+}

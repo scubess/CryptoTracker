@@ -1,0 +1,11 @@
+//
+//  Debug.xcconfig
+//  CryptoTracker
+//
+//  Created by selvaganapathy chinnakalai on 11/05/2025.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BASE_URL = "sandbox-api.example.com"
+LOGGING_ENABLED = YES
