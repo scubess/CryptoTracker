@@ -39,6 +39,7 @@ struct CryptoDetailView: View {
                     .font(.title)
                 Text("Symbol: \(crypto.symbol.uppercased())")
                     .foregroundColor(.secondary)
+                    .accessibilityIdentifier("CryptoSymbolLabel")
                 Text("Price: $\(crypto.currentPrice, specifier: "%.2f")")
                     .font(.title2)
             }

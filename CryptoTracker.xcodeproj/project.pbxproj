@@ -19,7 +19,6 @@
 		000DB9D92DCFC838009DFF03 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9D82DCFC838009DFF03 /* Crypto.swift */; };
 		000DB9DD2DCFD2A3009DFF03 /* CryptoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9DC2DCFD2A3009DFF03 /* CryptoDetailView.swift */; };
 		000DB9DF2DCFD2D1009DFF03 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9DE2DCFD2D1009DFF03 /* Utils.swift */; };
-		000DB9E52DCFD5F3009DFF03 /* CryptoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB9E42DCFD5F3009DFF03 /* CryptoServiceTests.swift */; };
 		000DB9F52DCFD883009DFF03 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 000DB9F42DCFD883009DFF03 /* iOSSnapshotTestCase */; };
 		000DBA082DCFDBF9009DFF03 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 000DBA072DCFDBF9009DFF03 /* PromiseKit */; };
 		000DBA0A2DCFDC07009DFF03 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 000DBA092DCFDC07009DFF03 /* PromiseKit */; };
@@ -32,7 +31,14 @@
 		00FCF5172DDDEFBB006689AD /* CryptoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCF5162DDDEFBB006689AD /* CryptoRepositoryImpl.swift */; };
 		00FCF5192DDDEFD8006689AD /* FetchCryptoListUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCF5182DDDEFD8006689AD /* FetchCryptoListUseCaseImpl.swift */; };
 		00FCF51C2DDDF0CF006689AD /* CryptoListIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCF51B2DDDF0CF006689AD /* CryptoListIntent.swift */; };
-		00FCF5212DDE01F0006689AD /* CryptoTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DBA0E2DCFDE66009DFF03 /* CryptoTrackerUITests.swift */; };
+		00FCF5262DDE087F006689AD /* MockFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCF5222DDE087E006689AD /* MockFetchUseCase.swift */; };
+		00FCF5272DDE087F006689AD /* CryptoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCF5232DDE087F006689AD /* CryptoListViewModelTests.swift */; };
+		00FCF5282DDE087F006689AD /* MockCryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCF5242DDE087F006689AD /* MockCryptoService.swift */; };
+		00FCF5292DDE087F006689AD /* MockCryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCF5252DDE087F006689AD /* MockCryptoRepository.swift */; };
+		00FCF52A2DDE0A77006689AD /* CryptoTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DBA0E2DCFDE66009DFF03 /* CryptoTrackerUITests.swift */; };
+		00FCF52D2DDE0C02006689AD /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCF52C2DDE0C02006689AD /* APIClientTests.swift */; };
+		00FCF52F2DDE0C4D006689AD /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCF52E2DDE0C4D006689AD /* EndpointTests.swift */; };
+		00FCF5312DDE0C74006689AD /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCF5302DDE0C74006689AD /* MockNetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +75,6 @@
 		000DB9D82DCFC838009DFF03 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		000DB9DC2DCFD2A3009DFF03 /* CryptoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailView.swift; sourceTree = "<group>"; };
 		000DB9DE2DCFD2D1009DFF03 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		000DB9E42DCFD5F3009DFF03 /* CryptoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoServiceTests.swift; sourceTree = "<group>"; };
 		000DBA0E2DCFDE66009DFF03 /* CryptoTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerUITests.swift; sourceTree = "<group>"; };
 		00B5DC882DD126A300763B8D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		00B5DC8A2DD126B600763B8D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -79,6 +84,13 @@
 		00FCF5162DDDEFBB006689AD /* CryptoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepositoryImpl.swift; sourceTree = "<group>"; };
 		00FCF5182DDDEFD8006689AD /* FetchCryptoListUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCryptoListUseCaseImpl.swift; sourceTree = "<group>"; };
 		00FCF51B2DDDF0CF006689AD /* CryptoListIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListIntent.swift; sourceTree = "<group>"; };
+		00FCF5222DDE087E006689AD /* MockFetchUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFetchUseCase.swift; sourceTree = "<group>"; };
+		00FCF5232DDE087F006689AD /* CryptoListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoListViewModelTests.swift; sourceTree = "<group>"; };
+		00FCF5242DDE087F006689AD /* MockCryptoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCryptoService.swift; sourceTree = "<group>"; };
+		00FCF5252DDE087F006689AD /* MockCryptoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCryptoRepository.swift; sourceTree = "<group>"; };
+		00FCF52C2DDE0C02006689AD /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		00FCF52E2DDE0C4D006689AD /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		00FCF5302DDE0C74006689AD /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +163,10 @@
 		000DB9A52DCFC366009DFF03 /* CryptoTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				000DB9E42DCFD5F3009DFF03 /* CryptoServiceTests.swift */,
+				00FCF52B2DDE0BF3006689AD /* Mock */,
+				00FCF5232DDE087F006689AD /* CryptoListViewModelTests.swift */,
+				00FCF52C2DDE0C02006689AD /* APIClientTests.swift */,
+				00FCF52E2DDE0C4D006689AD /* EndpointTests.swift */,
 			);
 			path = CryptoTrackerTests;
 			sourceTree = "<group>";
@@ -276,6 +291,17 @@
 				00FCF51B2DDDF0CF006689AD /* CryptoListIntent.swift */,
 			);
 			path = Intent;
+			sourceTree = "<group>";
+		};
+		00FCF52B2DDE0BF3006689AD /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				00FCF5252DDE087F006689AD /* MockCryptoRepository.swift */,
+				00FCF5242DDE087F006689AD /* MockCryptoService.swift */,
+				00FCF5222DDE087E006689AD /* MockFetchUseCase.swift */,
+				00FCF5302DDE0C74006689AD /* MockNetworkClient.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,8 +473,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000DB9E52DCFD5F3009DFF03 /* CryptoServiceTests.swift in Sources */,
-				00FCF5212DDE01F0006689AD /* CryptoTrackerUITests.swift in Sources */,
+				00FCF5282DDE087F006689AD /* MockCryptoService.swift in Sources */,
+				00FCF5292DDE087F006689AD /* MockCryptoRepository.swift in Sources */,
+				00FCF52D2DDE0C02006689AD /* APIClientTests.swift in Sources */,
+				00FCF5272DDE087F006689AD /* CryptoListViewModelTests.swift in Sources */,
+				00FCF52F2DDE0C4D006689AD /* EndpointTests.swift in Sources */,
+				00FCF5312DDE0C74006689AD /* MockNetworkClient.swift in Sources */,
+				00FCF5262DDE087F006689AD /* MockFetchUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FCF52A2DDE0A77006689AD /* CryptoTrackerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
