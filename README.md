@@ -6,14 +6,18 @@ This project demonstrates how to build a modular, testable iOS app using **MVVM 
 
 ## Issues Found 
 
-Area    Issue
-SOLID Principles    ✅ Mostly followed, but Endpoint is very loosely defined (S/I Violations).
-Architecture    ❌ Clean Architecture not fully enforced (e.g. UseCase/Entity layers are thin or missing).
-Async Handling    ❌ Using PromiseKit, not Swift Concurrency (async/await) or Combine.
-Presentation Layer    ❌ UIKit-based likely; no SwiftUI or Combine.
-Testing    ❌ No unit tests or mocks visible.
-Helpers/Utils    ✅ Minimal, but could use centralization.
-Modularization    ❌ Everything lives in a monolithic app module.
+## Project Review Summary
+
+| Area               | Issue                                                                 |
+|--------------------|-----------------------------------------------------------------------|
+| **SOLID Principles**     | ✅ Mostly followed, but `Endpoint` is very loosely defined (S/I violations).   |
+| **Architecture**         | ❌ Clean Architecture not fully enforced (e.g., UseCase/Entity layers are thin or missing). |
+| **Async Handling**       | ❌ Using PromiseKit instead of modern Swift Concurrency (`async/await`) or Combine. |
+| **Presentation Layer**   | ❌ UIKit-based likely; lacks SwiftUI and Combine integration.      |
+| **Testing**              | ❌ No unit tests or mocks visible.                                 |
+| **Helpers/Utils**        | ✅ Minimal, but could use better centralization.                  |
+| **Modularization**       | ❌ Everything resides in a monolithic app module.                 |
+
 
 
 ---
