@@ -1,3 +1,5 @@
+![iOS CI](https://github.com/scubess/CryptoTracker/actions/workflows/ios-tests.yml/badge.svg
+
 # ✅ CryptoTracker – Architecture Challenge Completion
 
 This repository demonstrates the completion of the architecture challenge using two different approaches in separate branches:
