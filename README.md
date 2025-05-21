@@ -51,6 +51,7 @@ This repository demonstrates the completion of the architecture challenge using 
 - Debug logging: uses `OSLog` (disabled in release builds)
 - Optimized API response with **image caching** via `NSCache`
 - Zero force unwraps — everything is safely unwrapped with `guard` / `if let`
+- Configure default github runner for iOS tests and attach badge
 
 ### ✅ SwiftUI + Combine (in `main`)
 
